@@ -11,6 +11,7 @@ public static void main(String[] args)
 	String name=sc.nextLine();
 	int len=name.length()-1;
 	int count=0;
+	int found=0;
 	while(len>=0)
 	{
 		if(name.charAt(len)=='A'||name.charAt(len)=='a'||name.charAt(len)=='E'||name.charAt(len)=='e'
@@ -18,9 +19,16 @@ public static void main(String[] args)
 		{
 		count ++;	
 		}
+		
+		else {
+			found++;
+		}
 		len--;
 		
 	}
-	System.out.println(count);
+	System.out.println(count+" characters are vowels");
+	System.out.println(found+" characters are consants");
 }
+
+
 }
